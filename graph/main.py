@@ -27,7 +27,7 @@ def main():
         print("No files to ingest.")
         return
     ingest_paths(paths)
-    asyncio.run(ask_with_pathrag("Who are the authors of LayoutParser and do they overlap any of the other articles?", verbose=True))
+    asyncio.run(ask_with_pathrag("Bij welke organisatie werkt Joost?", verbose=True))
 
 if __name__ == "__main__":
     main()

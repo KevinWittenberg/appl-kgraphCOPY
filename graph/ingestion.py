@@ -459,7 +459,7 @@ def ingest_paths(paths: List[Path]):
         # res['entities'], res['relationships'], res['content_keywords']
         res = extract_from_chunks(chunks)  # from extractor.py
         
-        # Consolidate/merge entities (by (name,type)) and upsert those first
+        # Consolidate/merge entities (by name) and upsert those first
         entities_in = res.get("entities", []) or []
         edges_in = res.get("relationships", []) or []
 
